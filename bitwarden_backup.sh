@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+#stop script on command failure, ensures that traps work correctly, undefined variable reference and pipe failure will stop the script
 set -Eeuo pipefail
 
 #==============================
