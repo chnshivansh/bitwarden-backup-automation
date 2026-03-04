@@ -1,0 +1,11 @@
+[Unit]
+Description=Bitwarden Vault Backup using Restic
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/.local/bin/bitwarden_backup.sh
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7

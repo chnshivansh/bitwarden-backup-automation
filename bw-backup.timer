@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Bitwarden Backup Timer
+
+[Timer]
+OnCalendar=*-*-* 12:00:00
+Persistent=true
+RandomizedDelaySec=5m
+
+[Install]
+WantedBy=timers.target
